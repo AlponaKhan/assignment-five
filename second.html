@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques Ans</title>
+    <!-- TailwindCss Cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /*Font Style*/
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class="poppins-font bg-[#F4F7FF] ">
+    <header>
+        <nav class="flex items-center justify-between py-0 px-5 mt-6 mb-5 mx-10  rounded-2xl bg-white">
+            <div class="flex gap-2 p-6">
+                <img src="assets/logo.png" alt="">
+                <h2 class="text-4xl">Dev<span class="font-bold">Board</span></h2>
+            </div>
+            <div class="">
+                <button class="bg-[#3752FD] text-white font-medium text-base py-3 px-5 rounded-lg mb-3 ">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+    <main class="mx-10 mb-14">
+        <section>
+            <h2 class="font-bold text-2xl text-center pb-4">Blogs</h2>
+            <div class="grid gap-3">
+                <!-- ques-1 -->
+                <div class="bg-white rounded-2xl">
+                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-1: What are the different ways to select an element in the DOM?</h3>
+                    <p class="font-bold text-lg pl-4 pt-4 text-gray-600">Answer-1:</p>
+                    <ol class="py-4 pl-20 text-gray-600 list-decimal">
+                        <li>getElementById</li>
+                        <li>getElementsByClassName</li>
+                        <li>getElementsByTagName</li>
+                        <li>querySelector</li>
+                        <li>querySelectorAll</li>
+                    </ol>
+                </div>
+                <!-- ques-2 -->
+                <div class="bg-white rounded-2xl">
+                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+                    <p class="font-bold text-lg pl-4 pt-4 text-gray-600">Answer-2:</p>
+                    <p class="py-4 pl-4 text-gray-600">innerHTML gives the full content with html tags. <br>innerText only gives the text/content without html tags but it also shows the styles or design. <br>textContent also gives the text/content without html tags but it doesn't show the styles or design.It gives row content.</p>
+                </div>
+                <!-- ques-3 -->
+                <div class="bg-white rounded-2xl">
+                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-3: What is event delegation in the DOM?</h3>
+                    <p class="font-bold text-lg pl-4 pt-4 text-gray-600">Answer-3:</p>
+                    <p class="py-4 pl-4 text-gray-600">Event delegation is a technique where adding a single event lister to a parent element can handle it's child element event dynamically.</p>
+                </div>
+                <!-- ques-4 -->
+                <div class="bg-white rounded-2xl">
+                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-4: What is event bubbling in the DOM?</h3>
+                    <p class="font-bold text-lg pl-4 pt-4 text-gray-600">Answer-4:</p>
+                    <p class="py-4 pl-4 text-gray-600">Event bubbling works in DOM using node. It starts from the target element then it's bubble up to it's parent node until reaching the root node. </p>
+                </div>
+                <!-- ques-5 -->
+                <div class="bg-white rounded-2xl">
+                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                    <p class="font-bold text-lg pl-4 pt-4 text-gray-600">Answer-5:</p>
+                    <p class="py-4 pl-4 text-gray-600">Create : using createElement() method can create a new tag. <br>Add : using appendChild() method can add a new element. <br>Remove : using removeChild() method can remove an element. </p>
+                </div>
+            </div>
+        </section>
+    </main>  
+</body>
+</html>
