@@ -29,4 +29,41 @@ for (let i=0; i<clicked.length; i++) {
        }
     })
 }
+// task assigned
+function assignedTask(id){
+    const text = document.getElementById(id).innerText;
+    const convertedText = parseInt(text);
+    return convertedText;
+
+}
+let clickBtn = document.getElementsByClassName("completedBtn")
+
+let sum = assignedTask("increment")
+let sub = assignedTask("taskText")
+for(let i=0; i<clicked.length; i++){
+    clickBtn[i].addEventListener("click",function(){
+        
+        const checkboxText = assignedTask("increment")
+        sum = sum + 1;
+        document.getElementById("increment").innerText = sum;
+
+        const task =assignedTask("taskText");
+        sub = sub - 1;
+        document.getElementById("taskText").innerText = sub;
+    })
+
+}
+// real date
+function dayAndDate(){
+    let now = new Date();
+    let todayDay = now.toLocaleString("en-US",{weekday:"short"});
+    let todayMonth = now.toLocaleString("en-US",{month:"short"});
+    let date =now.getDate();
+    let year =now.getFullYear();
+
+    return `${todayDay}, ${todayMonth} ${date} ${year}`;
+     
+}
+document.getElementById("realDate").innerText = dayAndDate();
+
 
