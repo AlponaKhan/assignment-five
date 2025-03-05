@@ -37,17 +37,17 @@
                     <img src="assets/checkbox.png" alt="">
                     <p class="font-bold text-3xl">23</p>
                 </div>
-                <div class="p-2 rounded-full bg-[#F4F7FF]">
+                <div id="colorWheel" class="p-2 rounded-full bg-[#F4F7FF]">
                     <img src="assets/theme-btn.png" alt="">
                 </div>
             </div>
         </nav>
     </header>
     <main class="flex gap-6 justify-between mx-10 mb-14">
-        <section class="bg-white flex-auto text-center rounded-2xl">
+        <section class="bg-white flex-auto rounded-2xl">
             <!-- one section -->
             <div class="flex gap-6 p-6">
-                <div class="bg-[#F4F7FF] flex rounded-xl p-8 ">
+                <div class="bg-[#F4F7FF] flex gap-2 rounded-xl p-8 ">
                     <div class="bg-white rounded-full p-3 block m-auto">
                         <img src="assets/checkbox.png" alt="">
                     </div>
@@ -58,15 +58,14 @@
                 </div>
                 <div class="flex gap-2 rounded-xl bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] py-6 pl-10 pr-20 flex-auto">
                     <img src="assets/board.png" alt="">
-                    <h3 class="font-medium text-2xl text-white text-left">Discover Something <br>New Today!</h3>
+                    <h3 id="newPage" class="cursor-pointer font-medium text-2xl text-white text-left">Discover Something <br>New Today!</h3>
                 </div>
-                <div class="bg-[#F4F7FF] flex rounded-xl p-8 ">
+                <div class="bg-[#F4F7FF] flex gap-2 rounded-xl p-8 ">
                     <div class="bg-white rounded-full p-3 block m-auto">
                         <img src="assets/calender.png" alt="">
                     </div>
                     <div>
-                        <p class="font-medium text-xl">Wed ,<br><span class="font-bold">Jul 28 2025</span></p>
-
+                        <p class="font-medium text-xl pt-4">Wed ,<span class="font-bold">Jul 28 2025</span></p>
                     </div>
                 </div>
             </div>
@@ -74,10 +73,10 @@
             <section class="grid grid-cols-3 gap-9 px-6 pb-8">
                 <!-- card-1 -->
                 <div class="bg-[#F4F7FF] rounded-lg">
-                    <div class="px-6 pl-6 text-left">
-                        <span class="text-base rounded-lg bg-white py-2 px-4 inline-block mt-6">ShopEase</span>
-                        <h2 class="font-medium text-2xl my-4">Fix Mobile Button Issue </h2>
-                        <p class="bg-white rounded-lg p-4 mb-4 truncate text-gray-500">Debug using Chrome <br>DevTools, check for overlapping
+                    <div class="px-6 pl-6 ">
+                        <span class="text-base  rounded-lg bg-white py-2 px-4 inline-block mt-6">ShopEase</span>
+                        <h2 class="font-medium  text-2xl my-4">Fix Mobile Button Issue </h2>
+                        <p class="bg-white  rounded-lg p-4 mb-4 truncate text-gray-500">Debug using Chrome <br>DevTools, check for overlapping
                             elements, and ensure onClick works properly
                             and ensure onClick works properly</p>
                         <div class="flex gap-6 pb-5 border-dashed border-t-2">
@@ -85,8 +84,9 @@
                                 <p class="text-sm mt-4 text-gray-600">Deadline</p>
                                 <h3 class="font-medium text-base">21 March 2025</h3>
                             </div>
-                            <div class="bg-[#3752FD] rounded-lg mt-4">
-                                <button class="font-medium text-base text-white py-2.5 px-5">Completed</button>
+                            <div class="bg-[#3752FD] rounded-lg mt-4 ">
+                                <button class=" completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium  text-base text-white py-2.5 px-5">Completed</button>
+                                
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                                 <h5 class="font-medium text-base">21 March 2025</h5>
                             </div>
                             <div class="bg-[#3752FD] rounded-lg mt-4">
-                                <button class="font-medium text-base text-white py-2.5 px-5">Completed</button>
+                                <button class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                                 <h5 class="font-medium text-base">21 March 2025</h5>
                             </div>
                             <div class="bg-[#3752FD] rounded-lg mt-4">
-                                <button class="font-medium text-base text-white py-2.5 px-5">Completed</button>
+                                <button class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -144,7 +144,7 @@
                                 <h5 class="font-medium text-base">21 March 2025</h5>
                             </div>
                             <div class="bg-[#3752FD] rounded-lg mt-4">
-                                <button class="font-medium text-base text-white py-2.5 px-5">Completed</button>
+                                <button class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -163,7 +163,7 @@
                                 <h5 class="font-medium text-base">21 March 2025</h5>
                             </div>
                             <div class="bg-[#3752FD] rounded-lg mt-4">
-                                <button class="font-medium text-base text-white py-2.5 px-5">Completed</button>
+                                <button class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -182,7 +182,7 @@
                                 <h5 class="font-medium text-base">21 March 2025</h5>
                             </div>
                             <div class="bg-[#3752FD] rounded-lg mt-4">
-                                <button class="font-medium text-base text-white py-2.5 px-5">Completed</button>
+                                <button class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -200,6 +200,7 @@
             </div>
         </section>
     </main>
+    <!-- js link -->
+    <script src="script/event.js"></script>
 </body>
-
 </html>

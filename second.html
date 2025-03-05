@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +23,7 @@
         }
     </style>
 </head>
+
 <body class="poppins-font bg-[#F4F7FF] ">
     <header>
         <nav class="flex items-center justify-between py-0 px-5 mt-6 mb-5 mx-10  rounded-2xl bg-white">
@@ -29,8 +31,10 @@
                 <img src="assets/logo.png" alt="">
                 <h2 class="text-4xl">Dev<span class="font-bold">Board</span></h2>
             </div>
-            <div class="">
-                <button class="bg-[#3752FD] text-white font-medium text-base py-3 px-5 rounded-lg mb-3 ">Back to Desk</button>
+            <div>
+                <button id="backBtn"
+                    class="bg-[#3752FD] text-white font-medium text-base py-3 px-5 rounded-lg mb-3 ">Back to
+                    Desk</button>
             </div>
         </nav>
     </header>
@@ -40,7 +44,8 @@
             <div class="grid gap-3">
                 <!-- ques-1 -->
                 <div class="bg-white rounded-2xl">
-                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-1: What are the different ways to select an element in the DOM?</h3>
+                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-1: What are the different
+                        ways to select an element in the DOM?</h3>
                     <p class="font-bold text-lg pl-4 pt-4 text-gray-600">Answer-1:</p>
                     <ol class="py-4 pl-20 text-gray-600 list-decimal">
                         <li>getElementById</li>
@@ -52,30 +57,49 @@
                 </div>
                 <!-- ques-2 -->
                 <div class="bg-white rounded-2xl">
-                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-2: What is the difference
+                        between innerHTML, innerText, and textContent ?</h3>
                     <p class="font-bold text-lg pl-4 pt-4 text-gray-600">Answer-2:</p>
-                    <p class="py-4 pl-4 text-gray-600">innerHTML gives the full content with html tags. <br>innerText only gives the text/content without html tags but it also shows the styles or design. <br>textContent also gives the text/content without html tags but it doesn't show the styles or design.It gives row content.</p>
+                    <p class="py-4 pl-4 text-gray-600">innerHTML gives the full content with html tags. <br>innerText
+                        only gives the text/content without html tags but it also shows the styles or design.
+                        <br>textContent also gives the text/content without html tags but it doesn't show the styles or
+                        design.It gives row content.</p>
                 </div>
                 <!-- ques-3 -->
                 <div class="bg-white rounded-2xl">
-                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-3: What is event delegation in the DOM?</h3>
+                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-3: What is event
+                        delegation in the DOM?</h3>
                     <p class="font-bold text-lg pl-4 pt-4 text-gray-600">Answer-3:</p>
-                    <p class="py-4 pl-4 text-gray-600">Event delegation is a technique where adding a single event lister to a parent element can handle it's child element event dynamically.</p>
+                    <p class="py-4 pl-4 text-gray-600">Event delegation is a technique where adding a single event
+                        lister to a parent element can handle it's child element event dynamically.</p>
                 </div>
                 <!-- ques-4 -->
                 <div class="bg-white rounded-2xl">
-                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-4: What is event bubbling in the DOM?</h3>
+                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-4: What is event bubbling
+                        in the DOM?</h3>
                     <p class="font-bold text-lg pl-4 pt-4 text-gray-600">Answer-4:</p>
-                    <p class="py-4 pl-4 text-gray-600">Event bubbling works in DOM using node. It starts from the target element then it's bubble up to it's parent node until reaching the root node. </p>
+                    <p class="py-4 pl-4 text-gray-600">Event bubbling works in DOM using node. It starts from the target
+                        element then it's bubble up to it's parent node until reaching the root node. </p>
                 </div>
                 <!-- ques-5 -->
                 <div class="bg-white rounded-2xl">
-                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                    <h3 class="border-dashed border-b-2 font-bold text-lg py-4 pl-4">Question-5: How do you create, add,
+                        and remove elements using JavaScript?</h3>
                     <p class="font-bold text-lg pl-4 pt-4 text-gray-600">Answer-5:</p>
-                    <p class="py-4 pl-4 text-gray-600">Create : using createElement() method can create a new tag. <br>Add : using appendChild() method can add a new element. <br>Remove : using removeChild() method can remove an element. </p>
+                    <p class="py-4 pl-4 text-gray-600">Create : using createElement() method can create a new tag.
+                        <br>Add : using appendChild() method can add a new element. <br>Remove : using removeChild()
+                        method can remove an element. </p>
                 </div>
             </div>
         </section>
-    </main>  
+    </main>
+    <!--js link  -->
+    <script src="./script/event.js"></script>
+    <script>
+        document.getElementById("backBtn").addEventListener("click", function () {
+            window.location.href = "./index.html"
+        })
+    </script>
 </body>
+
 </html>
