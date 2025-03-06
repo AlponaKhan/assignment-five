@@ -23,9 +23,8 @@
         }
     </style>
 </head>
-<!-- bg-[#F4F7FF] -->
 
-<body class="poppins-font bg-green-400 ">
+<body class="poppins-font bg-[#F4F7FF] ">
     <header>
         <nav class="flex items-center justify-between py-0 px-5 mt-6 mb-5 mx-10  rounded-2xl bg-white">
             <div class="flex gap-2 p-6">
@@ -46,26 +45,28 @@
     <main class="flex gap-6 justify-between mx-10 mb-14">
         <section class="bg-white flex-auto rounded-2xl">
             <!-- one section -->
-            <div class="flex gap-6 p-6">
+            <div class="flex gap-6 p-6 border-dashed border-b-2 my-8">
                 <div class="bg-[#F4F7FF] flex gap-2 rounded-xl p-8 ">
                     <div class="bg-white rounded-full p-3 block m-auto">
                         <img src="assets/checkbox.png" alt="">
                     </div>
                     <div>
                         <p class="font-medium text-base">Task Assigned</p>
-                        <p id="taskText" class="font-bold text-3xl">06</p>
+                        <p id="taskText" class="font-bold text-3xl">6</p>
                     </div>
                 </div>
-                <div class="flex gap-2 rounded-xl bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] py-6 pl-10 pr-20 flex-auto">
+                <div
+                    class="flex gap-2 rounded-xl bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] py-6 pl-10 pr-20 flex-auto">
                     <img src="assets/board.png" alt="">
-                    <h3 id="newPage" class="cursor-pointer font-medium text-2xl text-white text-left">Discover Something <br>New Today!</h3>
+                    <h3 id="newPage" class="cursor-pointer font-medium text-2xl text-white text-left">Discover Something
+                        <br>New Today!</h3>
                 </div>
                 <div class="bg-[#F4F7FF] flex gap-2 rounded-xl p-8 ">
                     <div class="bg-white rounded-full p-3 block m-auto">
                         <img src="assets/calender.png" alt="">
                     </div>
                     <div>
-                        <p id ="realDate" class="font-medium text-xl pt-4"></p>
+                        <p id="realDate" class="font-medium text-xl pt-4"></p>
                     </div>
                 </div>
             </div>
@@ -73,10 +74,11 @@
             <section class="grid grid-cols-3 gap-9 px-6 pb-8">
                 <!-- card-1 -->
                 <div class="bg-[#F4F7FF] rounded-lg">
-                    <div class="px-6 pl-6 ">
+                    <div class="card-task px-6 pl-6 ">
                         <span class="text-base  rounded-lg bg-white py-2 px-4 inline-block mt-6">ShopEase</span>
-                        <h2 class="font-medium  text-2xl my-4">Fix Mobile Button Issue </h2>
-                        <p class="bg-white  rounded-lg p-4 mb-4 truncate text-gray-500">Debug using Chrome <br>DevTools, check for overlapping
+                        <h2 class=" font-medium  text-2xl my-4">Fix Mobile Button Issue </h2>
+                        <p class="bg-white  rounded-lg p-4 mb-4 truncate text-gray-500">Debug using Chrome <br>DevTools,
+                            check for overlapping
                             elements, and ensure onClick works properly
                             and ensure onClick works properly</p>
                         <div class="flex gap-6 pb-5 border-dashed border-t-2">
@@ -85,27 +87,29 @@
                                 <h3 class="font-medium text-base">21 March 2025</h3>
                             </div>
                             <div class="bg-[#3752FD] rounded-lg mt-4 ">
-                                <button class=" completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium  text-base text-white py-2.5 px-5">Completed</button>
-                                
+                                <button
+                                    class=" completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium  text-base text-white py-2.5 px-5">Completed</button>
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- card 2 -->
                 <div class="bg-[#F4F7FF] rounded-lg">
-                    <div class="px-6 pl-6 text-left">
+                    <div class="card-task px-6 pl-6 text-left">
                         <span class="text-base rounded-lg bg-white py-2 px-4 inline-block mt-6">CloudSync</span>
-                        <h2 class="font-medium text-2xl my-4">Add Dark Mode </h2>
-                        <p class="bg-white rounded-lg p-4 mb-4 truncate text-gray-500">Debug using Chrome <br>DevTools, check for overlapping
-                            elements, and ensure onClick works properly
-                            and ensure onClick works properly</p>
+                        <h2 class=" font-medium text-2xl my-4">Add Dark Mode </h2>
+                        <p class="bg-white rounded-lg p-4 mb-4 truncate text-gray-500">Store the user's preference in
+                            <br>localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                        </p>
                         <div class="flex gap-6 pb-5 border-dashed border-t-2">
                             <div>
                                 <p class="text-sm mt-4 text-gray-600">Deadline</p>
                                 <h5 class="font-medium text-base">21 March 2025</h5>
                             </div>
                             <div class="bg-[#3752FD] rounded-lg mt-4">
-                                <button class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
+                                <button
+                                    class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -115,16 +119,17 @@
                     <div class="px-6 pl-6 text-left">
                         <span class="text-base rounded-lg bg-white py-2 px-4 inline-block mt-6">SwiftPay</span>
                         <h2 class="font-medium text-2xl my-4">Optimize Home page </h2>
-                        <p class="bg-white rounded-lg p-4 mb-4 truncate text-gray-500">Debug using Chrome <br>DevTools, check for overlapping
-                            elements, and ensure onClick works properly
-                            and ensure onClick works properly</p>
+                        <p class="bg-white rounded-lg p-4 mb-4 truncate text-gray-500">When you built your website,
+                            <br>you likely created it with your users in mind, trying to make it easy for them to find
+                            and explore your content.</p>
                         <div class="flex gap-6 pb-5 border-dashed border-t-2">
                             <div>
                                 <p class="text-sm mt-4 text-gray-600">Deadline</p>
                                 <h5 class="font-medium text-base">21 March 2025</h5>
                             </div>
                             <div class="bg-[#3752FD] rounded-lg mt-4">
-                                <button class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
+                                <button
+                                    class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -135,16 +140,17 @@
                         <span class="text-base rounded-lg bg-white py-2 px-4 inline-block mt-6">Meta</span>
 
                         <h2 class="font-medium text-2xl my-4">Add new emoji 🤲 </h2>
-                        <p class="bg-white rounded-lg p-4 mb-4 truncate text-gray-500">Debug using Chrome <br>DevTools, check for overlapping
-                            elements, and ensure onClick works properly
-                            and ensure onClick works properly</p>
+                        <p class="bg-white rounded-lg p-4 mb-4 truncate text-gray-500">emoji, digital pictograms <br>
+                            used widely throughout social media, texting, e-mail, and other computer-mediated
+                            communications. </p>
                         <div class="flex gap-6 pb-5 border-dashed border-t-2">
                             <div>
                                 <p class="text-sm mt-4 text-gray-600">Deadline</p>
                                 <h5 class="font-medium text-base">21 March 2025</h5>
                             </div>
                             <div class="bg-[#3752FD] rounded-lg mt-4">
-                                <button class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
+                                <button
+                                    class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -153,17 +159,18 @@
                 <div class="bg-[#F4F7FF] rounded-lg">
                     <div class="px-6 pl-6 text-left">
                         <span class="text-base rounded-lg bg-white py-2 px-4 inline-block mt-6">Google LLC</span>
-                        <h2 class="font-medium text-2xl my-4">Integrate OpenAI API  </h2>
-                        <p class="bg-white rounded-lg p-4 mb-4 truncate text-gray-500">Debug using Chrome <br>DevTools, check for overlapping
-                            elements, and ensure onClick works properly
-                            and ensure onClick works properly</p>
+                        <h2 class="font-medium text-2xl my-4">Integrate OpenAI API </h2>
+                        <p class="bg-white rounded-lg p-4 mb-4 truncate text-gray-500">OpenAI is a private <br> research
+                            laboratory that aims to develop and direct artificial intelligence (AI) in ways that benefit
+                            humanity as a whole.</p>
                         <div class="flex gap-6 pb-5 border-dashed border-t-2">
                             <div>
                                 <p class="text-sm mt-4 text-gray-600">Deadline</p>
                                 <h5 class="font-medium text-base">21 March 2025</h5>
                             </div>
                             <div class="bg-[#3752FD] rounded-lg mt-4">
-                                <button class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
+                                <button
+                                    class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -172,17 +179,18 @@
                 <div class="bg-[#F4F7FF] rounded-lg">
                     <div class="px-6 pl-6 text-left">
                         <span class="text-base rounded-lg bg-white py-2 px-4 inline-block mt-6">Glassdoar</span>
-                        <h2 class="font-medium text-2xl my-4">Improve Job searching  </h2>
-                        <p class="bg-white rounded-lg p-4 mb-4 truncate text-gray-500">Debug using Chrome <br>DevTools, check for overlapping
-                            elements, and ensure onClick works properly
-                            and ensure onClick works properly</p>
+                        <h2 class="font-medium text-2xl my-4">Improve Job searching </h2>
+                        <p class="bg-white rounded-lg p-4 mb-4 truncate text-gray-500">People might think <br>that job
+                            searching is just a simple task like using on Google. However, job searching is more
+                            complicated, and it requires appropriate strategies to succeed in seeking a job </p>
                         <div class="flex gap-6 pb-5 border-dashed border-t-2">
                             <div>
                                 <p class="text-sm mt-4 text-gray-600">Deadline</p>
                                 <h5 class="font-medium text-base">21 March 2025</h5>
                             </div>
                             <div class="bg-[#3752FD] rounded-lg mt-4">
-                                <button class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
+                                <button
+                                    class="completedBtn disabled:bg-gray-400 disabled:rounded-lg font-medium text-base text-white py-2.5 px-5">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -196,11 +204,16 @@
                 <h4 class="text-xl font-medium">Activity Log</h4>
             </div>
             <div class="mb-3 border-dashed border-b-2">
-                <button class="bg-[#3752FD] font-medium text-base py-3 px-5 rounded-lg mb-3 ">Clear History</button>
+                <button id="clearHistory" class="bg-[#3752FD] font-medium text-base py-3 px-5 rounded-lg mb-3 ">Clear
+                    History</button>
+            </div>
+            <div id="completeTask">
+
             </div>
         </section>
     </main>
     <!-- js link -->
     <script src="script/event.js"></script>
 </body>
+
 </html>
